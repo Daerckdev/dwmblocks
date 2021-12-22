@@ -172,6 +172,7 @@ int getstatus(char *str, char *last)
 {
 	strcpy(last, str);
 	str[0] = '\0';
+    strcat(str, " ");
     for(int i = 0; i < LENGTH(blocks); i++) {
 		strcat(str, statusbar[i]);
         if (i == LENGTH(blocks) - 1)
